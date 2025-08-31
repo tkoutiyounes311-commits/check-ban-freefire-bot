@@ -138,7 +138,7 @@ async def check_ban_command(ctx):
         await msg.edit(content=f"{ctx.author.mention}", embed=embed, attachments=[file])
 
 bot.run(TOKEN)
-    guild_list = "\n".join(guild_names)
+guild_list = "\n".join(guild_names)
     await ctx.send(f"Le bot est dans les guilds suivantes :\n{guild_list}")
 
 @bot.command(name="lang")
