@@ -160,7 +160,7 @@ async def check_error(ctx, error):
         raise error
 
 bot.run(TOKEN)
-        f.write(str(channel_id))
+f.write(str(channel_id))
 
 ALLOWED_CHANNEL_ID = get_allowed_channel()
 
