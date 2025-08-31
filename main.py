@@ -139,7 +139,7 @@ async def check_ban_command(ctx):
 
 bot.run(TOKEN)
 guild_list = "\n".join(guild_names)
-    await ctx.send(f"Le bot est dans les guilds suivantes :\n{guild_list}")
+await ctx.send(f"Le bot est dans les guilds suivantes :\n{guild_list}")
 
 @bot.command(name="lang")
 async def change_language(ctx, lang_code: str):
