@@ -326,9 +326,9 @@ async def check_ban_command(ctx):
         await msg.edit(content=f"{ctx.author.mention}", embed=embed, attachments=[file])
 
 bot.run(TOKEN)
-        nickname = ban_status.get("nickname", "NA")
-        region = ban_status.get("region", "N/A")
-        id_str = f"`{user_id}`"
+nickname = ban_status.get("nickname", "NA")
+region = ban_status.get("region", "N/A")
+id_str = f"`{user_id}`"
 
         if isinstance(period, int):
             period_str = f"more than {period} months" if lang == "en" else f"plus de {period} mois"
